@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"> </p>
+    <p id="p2"> </p>
+    <p id="p3"> </p>
+    <p id="p4"> </p>
+    <p id="p5"> </p>
+    <p id="p6"> </p>
+    <p id="p7"> </p>
+    <p id="p8"> </p>
+
+
+
+ 
+
+
+    <button type="button" onclick="my_function()"> click me </button><br><br>
+    <button type="button" onclick="my_function1(4,5)"> click here</button>
+    
+    <script>
+        x="Architha";
+        document.getElementById("p1").innerHTML=typeof (x);
+        console.log(typeof x);
+        x=true;
+        y=false;
+        console.log(typeof (x));
+        x=123567893564789578643;
+        console.log(typeof (x));
+        x=null ;
+        console.log(typeof (x));
+        x= BigInt("12334567890456789045678956789");
+        console.log(typeof(x));
+         
+        function my_function(){
+            document.getElementById("p2").innerHTML="Java Script";
+        }
+        function my_function1(x,y){
+                 sum=x+y;
+                 document.getElementById("p3").innerHTML=sum;
+        }
+        function my_function3(f){
+             degreecelcius=(5/9)*(f-32);
+             return degreecelcius;
+        }
+        let result =my_function3(100)
+        document.getElementById("p4").innerHTML="degreecelcius is  " +degreecelcius;
+
+        function my_function4(a,b,c){
+            sum=a+b+c;
+            average=sum/3;
+            document.getElementById("p5").innerHTML="sum is  " +sum;    
+
+            return average;
+        }
+         let q=my_function4(2,3,4)
+         document.getElementById("p6").innerHTML="Average is  " +average;   
+         
+         function area(a){
+            area=a**2;
+            return area;
+         }
+         let z=area(4)
+         document.getElementById("p7").innerHTML="The area of a square is   " +area;
+
+         function perimeter(a){
+            perimeter=4*a;
+            return perimeter;
+         }
+         let p=perimeter(4)
+         document.getElementById("p8").innerHTML="The perimeter of a square is  " +perimeter;
+        
+         
+        
+    </script>
+</body>
+</html>
